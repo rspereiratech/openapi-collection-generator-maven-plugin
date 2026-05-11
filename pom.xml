@@ -16,6 +16,19 @@
 
     <name>OpenAPI Collection Generator Maven Plugin</name>
     <description>Maven plugin that generates Postman and Insomnia collections from OpenAPI specifications.</description>
+    <url>https://github.com/rspereiratech/openapi-collection-generator-maven-plugin</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/rspereiratech/openapi-collection-generator-maven-plugin.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com/rspereiratech/openapi-collection-generator-maven-plugin.git</developerConnection>
+        <url>https://github.com/rspereiratech/openapi-collection-generator-maven-plugin</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>https://github.com/rspereiratech/openapi-collection-generator-maven-plugin/issues</url>
+    </issueManagement>
 
     <dependencies>
         <!-- Swagger Parser -->
@@ -34,11 +47,6 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.assertj</groupId>
-            <artifactId>assertj-core</artifactId>
             <scope>test</scope>
         </dependency>
         <dependency>
