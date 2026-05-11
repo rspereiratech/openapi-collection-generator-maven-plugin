@@ -1,5 +1,7 @@
 # OpenAPI Collection Generator Maven Plugin
 
+[![Build](https://github.com/rspereiratech/openapi-collection-generator-maven-plugin/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/rspereiratech/openapi-collection-generator-maven-plugin/actions/workflows/build.yml)
+[![CodeQL](https://github.com/rspereiratech/openapi-collection-generator-maven-plugin/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/rspereiratech/openapi-collection-generator-maven-plugin/actions/workflows/codeql.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Java](https://img.shields.io/badge/Java-17%2B-orange.svg)](https://adoptium.net/)
 [![Maven](https://img.shields.io/badge/Maven-3.9%2B-C71A36.svg?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
@@ -8,7 +10,6 @@
 [![Swagger-parser](https://img.shields.io/badge/swagger--parser-2.1-85EA2D.svg?logo=swagger&logoColor=black)](https://github.com/swagger-api/swagger-parser)
 [![Postman](https://img.shields.io/badge/Postman-v2.1-FF6C37.svg?logo=postman&logoColor=white)](https://schema.postman.com/)
 [![Insomnia](https://img.shields.io/badge/Insomnia-v4-4000BF.svg?logo=insomnia&logoColor=white)](https://insomnia.rest/)
-[![Status: Snapshot](https://img.shields.io/badge/status-snapshot-orange.svg)](#)
 [![Donate](https://img.shields.io/badge/Donate-NOWPayments-1A1A1A?logo=bitcoin&logoColor=white)](https://nowpayments.io/donation/rspereiratech)
 
 Maven plugin that generates **Postman** and **Insomnia** collections from an OpenAPI specification, with support for security schemes, custom `x-*` extensions, callbacks, and per-server environment files.
