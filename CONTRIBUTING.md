@@ -44,7 +44,7 @@ See [docs/configuration.md](docs/configuration.md) for the full parameter list.
 
 ## Tests
 
-- Unit tests use JUnit 5, AssertJ, and Mockito (already declared in the parent's `dependencyManagement`).
+- Unit tests use JUnit 5 (`org.junit.jupiter.api.Assertions`) and Mockito, declared in the parent's `dependencyManagement`. Do not introduce AssertJ.
 - The `GenerateCollectionMojo` exposes a package-private constructor specifically for injecting test doubles — prefer that over reflection.
 - Aim for small, focused unit tests around new components. Generators (Postman/Insomnia) should be covered by tests that load a small representative spec from `src/test/resources/`.
 
