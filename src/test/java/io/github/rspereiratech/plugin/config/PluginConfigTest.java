@@ -7,8 +7,8 @@ import java.io.File;
 
 import org.junit.jupiter.api.Test;
 
-import io.github.rspereiratech.plugin.core.config.GenerationConfig;
-import io.github.rspereiratech.plugin.core.model.CollectionFormat;
+import io.github.rspereiratech.openapi.collection.generator.core.config.GenerationConfig;
+import io.github.rspereiratech.openapi.collection.generator.core.model.CollectionFormat;
 
 class PluginConfigTest {
 

@@ -2,8 +2,8 @@ package io.github.rspereiratech.plugin.config;
 
 import java.io.File;
 
-import io.github.rspereiratech.plugin.core.config.GenerationConfig;
-import io.github.rspereiratech.plugin.core.model.CollectionFormat;
+import io.github.rspereiratech.openapi.collection.generator.core.config.GenerationConfig;
+import io.github.rspereiratech.openapi.collection.generator.core.model.CollectionFormat;
 
 /**
  * Immutable configuration record carrying all user-provided plugin parameters.
