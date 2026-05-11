@@ -10,6 +10,7 @@ End-user and architectural documentation for the **OpenAPI Collection Generator 
 - [Output Formats](formats.md) — Postman and Insomnia format specifics.
 - [OpenAPI Extensions](extensions.md) — Custom `x-*` extensions recognised by the plugin.
 - [Security](security.md) — How OpenAPI security schemes are translated into collection auth.
+- [Publishing](publishing.md) — SNAPSHOT/release publishing to Sonatype Central, required secrets.
 
 ## Quick links
 
