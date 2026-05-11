@@ -63,4 +63,18 @@ class ArraySchemaExampleGeneratorTest {
         assertEquals(1, ((List<?>) result).size());
         assertNotNull(((List<?>) result).get(0));
     }
+
+    @Test
+    void generate_returnsSingletonGenericObject_whenRecursiveReturnsNull() {
+        ArraySchema arr = new ArraySchema();
+        StringSchema item = new StringSchema();
+        arr.setItems(item);
+        when(recursive.generate(any(), any())).thenReturn(null);
+
+        Object result = gen.generate(arr, new OpenAPI());
+
+        assertTrue(result instanceof List<?>);
+        assertEquals(1, ((List<?>) result).size());
+        assertNotNull(((List<?>) result).get(0));
+    }
 }
