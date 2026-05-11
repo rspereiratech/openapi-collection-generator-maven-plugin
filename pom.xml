@@ -31,13 +31,27 @@
     </issueManagement>
 
     <dependencies>
-        <!-- Swagger Parser -->
+        <!-- Sibling modules: core SPI + format generators -->
+        <dependency>
+            <groupId>io.github.rspereiratech</groupId>
+            <artifactId>openapi-collection-generator-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.rspereiratech</groupId>
+            <artifactId>openapi-collection-generator-postman</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.github.rspereiratech</groupId>
+            <artifactId>openapi-collection-generator-insomnia</artifactId>
+        </dependency>
+
+        <!-- Swagger Parser (transitive via core but kept explicit for the Mojo) -->
         <dependency>
             <groupId>io.swagger.parser.v3</groupId>
             <artifactId>swagger-parser</artifactId>
         </dependency>
 
-        <!-- Jackson -->
+        <!-- Jackson (transitive via core but kept explicit) -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>

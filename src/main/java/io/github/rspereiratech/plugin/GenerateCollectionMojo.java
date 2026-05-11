@@ -4,19 +4,19 @@ import java.io.File;
 import java.util.List;
 
 import io.github.rspereiratech.plugin.config.PluginConfig;
-import io.github.rspereiratech.plugin.core.factory.CollectionGeneratorFactory;
+import io.github.rspereiratech.openapi.collection.generator.core.factory.CollectionGeneratorFactory;
 import io.github.rspereiratech.plugin.factory.DefaultCollectionGeneratorFactory;
-import io.github.rspereiratech.plugin.core.generator.AdditionalFile;
-import io.github.rspereiratech.plugin.core.generator.CollectionGenerator;
-import io.github.rspereiratech.plugin.core.loader.FileSpecLoader;
-import io.github.rspereiratech.plugin.core.loader.SpecLoader;
-import io.github.rspereiratech.plugin.core.model.CollectionFormat;
-import io.github.rspereiratech.plugin.core.parser.OpenApiParser;
-import io.github.rspereiratech.plugin.core.parser.SwaggerOpenApiParser;
-import io.github.rspereiratech.plugin.core.writer.CollectionWriter;
-import io.github.rspereiratech.plugin.core.writer.EnvironmentWriter;
-import io.github.rspereiratech.plugin.core.writer.FileCollectionWriter;
-import io.github.rspereiratech.plugin.core.writer.FileEnvironmentWriter;
+import io.github.rspereiratech.openapi.collection.generator.core.generator.AdditionalFile;
+import io.github.rspereiratech.openapi.collection.generator.core.generator.CollectionGenerator;
+import io.github.rspereiratech.openapi.collection.generator.core.loader.FileSpecLoader;
+import io.github.rspereiratech.openapi.collection.generator.core.loader.SpecLoader;
+import io.github.rspereiratech.openapi.collection.generator.core.model.CollectionFormat;
+import io.github.rspereiratech.openapi.collection.generator.core.parser.OpenApiParser;
+import io.github.rspereiratech.openapi.collection.generator.core.parser.SwaggerOpenApiParser;
+import io.github.rspereiratech.openapi.collection.generator.core.writer.CollectionWriter;
+import io.github.rspereiratech.openapi.collection.generator.core.writer.EnvironmentWriter;
+import io.github.rspereiratech.openapi.collection.generator.core.writer.FileCollectionWriter;
+import io.github.rspereiratech.openapi.collection.generator.core.writer.FileEnvironmentWriter;
 import io.swagger.v3.oas.models.OpenAPI;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
@@ -131,8 +131,8 @@ public class GenerateCollectionMojo extends AbstractMojo {
         getLog().info("openapi-collection-plugin: starting generation");
         PluginConfig config = new PluginConfig(specFile, outputDirectory,
                 CollectionFormat.fromString(format), collectionName, baseUrl);
-        specLoader.validate(config.specFile());
         try {
+            specLoader.validate(config.specFile());
             OpenAPI openApi = parser.parse(config.specFile());
             getLog().info("Spec loaded: " + openApi.getInfo().getTitle());
 

@@ -5,10 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Test;
 
-import io.github.rspereiratech.plugin.core.generator.CollectionGenerator;
-import io.github.rspereiratech.plugin.core.model.CollectionFormat;
-import io.github.rspereiratech.plugin.insomnia.generator.InsomniaCollectionGenerator;
-import io.github.rspereiratech.plugin.postman.generator.PostmanCollectionGenerator;
+import io.github.rspereiratech.openapi.collection.generator.core.generator.CollectionGenerator;
+import io.github.rspereiratech.openapi.collection.generator.core.model.CollectionFormat;
+import io.github.rspereiratech.openapi.collection.generator.insomnia.generator.InsomniaCollectionGenerator;
+import io.github.rspereiratech.openapi.collection.generator.postman.generator.PostmanCollectionGenerator;
 
 class DefaultCollectionGeneratorFactoryTest {
 

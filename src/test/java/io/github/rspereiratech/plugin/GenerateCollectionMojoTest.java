@@ -20,13 +20,14 @@ import org.junit.jupiter.api.io.TempDir;
 
 import java.nio.file.Path;
 
-import io.github.rspereiratech.plugin.core.factory.CollectionGeneratorFactory;
-import io.github.rspereiratech.plugin.core.generator.AdditionalFile;
-import io.github.rspereiratech.plugin.core.generator.CollectionGenerator;
-import io.github.rspereiratech.plugin.core.loader.SpecLoader;
-import io.github.rspereiratech.plugin.core.parser.OpenApiParser;
-import io.github.rspereiratech.plugin.core.writer.CollectionWriter;
-import io.github.rspereiratech.plugin.core.writer.EnvironmentWriter;
+import io.github.rspereiratech.openapi.collection.generator.core.factory.CollectionGeneratorFactory;
+import io.github.rspereiratech.openapi.collection.generator.core.generator.AdditionalFile;
+import io.github.rspereiratech.openapi.collection.generator.core.generator.CollectionGenerator;
+import io.github.rspereiratech.openapi.collection.generator.core.loader.SpecLoader;
+import io.github.rspereiratech.openapi.collection.generator.core.loader.SpecValidationException;
+import io.github.rspereiratech.openapi.collection.generator.core.parser.OpenApiParser;
+import io.github.rspereiratech.openapi.collection.generator.core.writer.CollectionWriter;
+import io.github.rspereiratech.openapi.collection.generator.core.writer.EnvironmentWriter;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -110,7 +111,7 @@ class GenerateCollectionMojoTest {
         File spec = dir.resolve("s.yaml").toFile();
         GenerateCollectionMojo m = newMojo(spec, dir.toFile(), "POSTMAN");
 
-        doThrow(new MojoExecutionException("missing")).when(specLoader).validate(any());
+        doThrow(new SpecValidationException("missing")).when(specLoader).validate(any());
 
         assertThrows(MojoExecutionException.class, m::execute);
         verify(parser, never()).parse(any());
