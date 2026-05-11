@@ -18,7 +18,7 @@ All parameters can be set either inside `<configuration>` in `pom.xml` or as sys
 
 ```xml
 <plugin>
-    <groupId>com.github.rspereiratech</groupId>
+    <groupId>io.github.rspereiratech</groupId>
     <artifactId>openapi-collection-generator-maven-plugin</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <executions>
@@ -41,7 +41,7 @@ All parameters can be set either inside `<configuration>` in `pom.xml` or as sys
 ## Command-line invocation
 
 ```bash
-mvn com.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
+mvn io.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
     -Dopenapi.spec=src/main/resources/petstore.yaml \
     -Dopenapi.format=INSOMNIA \
     -Dopenapi.outputDir=target/collections \
