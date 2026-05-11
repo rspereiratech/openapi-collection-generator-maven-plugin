@@ -5,7 +5,7 @@
 [![Maven](https://img.shields.io/badge/Maven-3.9%2B-C71A36.svg?logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 [![Maven Plugin API](https://img.shields.io/badge/Maven%20Plugin%20API-3.9-C71A36.svg?logo=apachemaven&logoColor=white)](https://maven.apache.org/ref/3.9.6/maven-plugin-api/)
 [![OpenAPI](https://img.shields.io/badge/OpenAPI-3-6BA539.svg?logo=openapiinitiative&logoColor=white)](https://www.openapis.org/)
-[![swagger-parser](https://img.shields.io/badge/swagger--parser-2.1-85EA2D.svg?logo=swagger&logoColor=black)](https://github.com/swagger-api/swagger-parser)
+[![Swagger-parser](https://img.shields.io/badge/swagger--parser-2.1-85EA2D.svg?logo=swagger&logoColor=black)](https://github.com/swagger-api/swagger-parser)
 [![Postman](https://img.shields.io/badge/Postman-v2.1-FF6C37.svg?logo=postman&logoColor=white)](https://schema.postman.com/)
 [![Insomnia](https://img.shields.io/badge/Insomnia-v4-4000BF.svg?logo=insomnia&logoColor=white)](https://insomnia.rest/)
 [![Status: Snapshot](https://img.shields.io/badge/status-snapshot-orange.svg)](#)
