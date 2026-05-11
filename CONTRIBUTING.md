@@ -26,7 +26,7 @@ mvn clean verify
 ## Run the plugin against your own spec
 
 ```bash
-mvn com.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
+mvn io.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
     -Dopenapi.spec=path/to/openapi.yaml \
     -Dopenapi.format=POSTMAN \
     -Dopenapi.outputDir=target/collections

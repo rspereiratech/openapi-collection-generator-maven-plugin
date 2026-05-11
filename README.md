@@ -27,7 +27,7 @@ Add the plugin to your project's `pom.xml`:
 <build>
     <plugins>
         <plugin>
-            <groupId>com.github.rspereiratech</groupId>
+            <groupId>io.github.rspereiratech</groupId>
             <artifactId>openapi-collection-generator-maven-plugin</artifactId>
             <version>1.0.0-SNAPSHOT</version>
             <executions>
@@ -75,7 +75,7 @@ See [docs/configuration.md](docs/configuration.md) for full details.
 ## Command-line example
 
 ```bash
-mvn com.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
+mvn io.github.rspereiratech:openapi-collection-generator-maven-plugin:generate \
     -Dopenapi.spec=src/main/resources/petstore.yaml \
     -Dopenapi.format=INSOMNIA \
     -Dopenapi.outputDir=target/collections
