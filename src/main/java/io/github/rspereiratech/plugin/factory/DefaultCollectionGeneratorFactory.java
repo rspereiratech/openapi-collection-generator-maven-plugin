@@ -19,7 +19,7 @@ import io.github.rspereiratech.openapi.collection.generator.core.extension.impl.
 import io.github.rspereiratech.openapi.collection.generator.core.extension.impl.XSummaryExtensionProcessor;
 import io.github.rspereiratech.openapi.collection.generator.core.generator.CollectionGenerator;
 import io.github.rspereiratech.openapi.collection.generator.insomnia.generator.InsomniaCollectionGenerator;
-import io.github.rspereiratech.openapi.collection.generator.core.id.UUIDGenerator;
+import io.github.rspereiratech.openapi.collection.generator.core.id.DeterministicIdGenerator;
 import io.github.rspereiratech.openapi.collection.generator.insomnia.body.DefaultInsomniaBodyBuilder;
 import io.github.rspereiratech.openapi.collection.generator.insomnia.builder.DefaultInsomniaRequestBuilder;
 import io.github.rspereiratech.openapi.collection.generator.insomnia.header.DefaultInsomniaHeaderBuilder;
@@ -87,7 +87,7 @@ public class DefaultCollectionGeneratorFactory implements CollectionGeneratorFac
     private CollectionGenerator buildInsomniaGenerator() {
         var security = buildSecurityApplier();
         var exampleGen = buildExampleChain();
-        var idGenerator = new UUIDGenerator();
+        var idGenerator = new DeterministicIdGenerator();
         var serializer = new JacksonCollectionSerializer();
         var serverGen = new DefaultServerEnvironmentGenerator();
         var extChain = buildExtensionChain();
